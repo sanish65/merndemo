@@ -21,8 +21,9 @@ class App extends Component {
         // console.log("data has been receibved");
         // this.getBlogPost();
       })
-      .catch(() => {
+      .catch((err) => {
         alert("Error retrieving detail !!!");
+        console.error("400",err)
       });
   }
 
@@ -53,7 +54,7 @@ class App extends Component {
       this.getBlogPost()
     })
       .catch((err) => {
-        console.log("data has not been sent errorrrrrrrr", err)
+        console.error("data has not been sent errorrrrrrrr", err)
       })
 
   }
