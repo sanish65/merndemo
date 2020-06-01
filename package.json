@@ -4,10 +4,14 @@
   "description": "mern",
   "main": "index.js",
   "scripts": {
+    "install-front": "npm install --prefix client",
     "start": "node index.js",
     "server": "nodemon index.js",
     "client" : "npm start --prefix client",
-    "dev" : "concurrently -n 'server,client' -c'yellow,blue' \"npm run server \" \"npm run client \""
+    "build": "npm run build --prefix client",
+    "dev" : "concurrently -n 'server,client' -c'yellow,blue' \"npm run server \" \"npm run client \"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run install-front && npm run build"
+
   },
   "repository": {
     "type": "git",
