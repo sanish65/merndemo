@@ -1,0 +1,38 @@
+.app{
+  padding: 20px;
+}
+
+.form-input{
+  margin: 10px 0px;
+}
+
+button{
+  background-color: gray;
+  color: black;
+  padding : .375rem .75rem;
+  font-size: 1em;
+  line-height: 1.5;
+  border-radius: .25em;
+  cursor: pointer;
+
+}
+
+.blog-post-display{
+  border: 1px solid red;
+  margin : 5px 5px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.form-input{
+  margin: 10px 0px;
+}
+.form-input, .form-input textarea{
+  width:  100%;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25em;
+  /* border: 1px solid gray; */
+  padding: .375em .75em;
+  outline: none;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "merndemo",
+  "version": "1.0.0",
+  "description": "mern",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client" : "npm start --prefix client",
+    "dev" : "concurrently -n 'server,client' -c'yellow,blue' \"npm run server \" \"npm run client \""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanish65/merndemo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanish65/merndemo/issues"
+  },
+  "homepage": "https://github.com/sanish65/merndemo#readme",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.16",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
